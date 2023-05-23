@@ -271,7 +271,6 @@ async function getvaluesfromcoins() {
     }
 
 }
-
 function getChart(result) {
     const objvaluesarrey = []
     const ArrayKEYS = []
@@ -280,6 +279,7 @@ function getChart(result) {
     ArrayKEYS.push(Object.keys(result))
     const chart = new CanvasJS.Chart("Chart", {
         animationEnabled: true,
+        theme: "dark1",
         title: {
             text: "Converts Coins To Usd"
         },
