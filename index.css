@@ -1,0 +1,143 @@
+body {
+    height: 100%;
+    background-image: url("images/light-grey-low-poly-background-vector.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.inputs {
+    width: 300px;
+    height: 52px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputs2 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+
+
+.flex {
+    background-color: rgb(187, 196, 196);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+
+}
+
+#img {
+    width: 150px;
+    height: 150px;
+}
+
+#Search {
+    height: 35px;
+}
+
+.allinputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#divcard {
+    background-image: url("images/backgroundcard.jpg");
+    background-size: 230%;
+    border: 1px solid white;
+    width: 350px;
+    border-radius: 40px;
+    font-weight: 500;
+    transition: 1s ease;
+
+
+}
+
+
+#divcard:hover {
+    transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+
+}
+
+#content {
+    margin-top: 10px;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+#divinfo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 320px;
+    background-color: rgb(42, 42, 42)
+}
+
+#uldivinfo {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#Chart {
+    margin-top: 20px;
+}
+
+#info {
+    text-align: center;
+}
+
+
+#myimg {
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 250px;
+    height: 250px;
+}
+
+.Description {
+    color: black;
+    font-size: x-large;
+    font-weight: 600;
+    font-style: oblique;
+
+}
+
+#toflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#h1info {
+    text-decoration-line: underline;
+    color: crimson;
+
+}
+
+.profilediv {
+    border: 3px solid black;
+    border-radius: 15px;
+    height: 650px;
+}
+
+#divtoggle {
+    display: flex;
+    justify-content: space-between;
+}
