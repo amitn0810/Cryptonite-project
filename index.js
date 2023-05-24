@@ -272,7 +272,6 @@ async function getvaluesfromcoins() {
 
 }
 function getChart(result) {
-    const objvaluesarrey = []
     const ArrayKEYS = []
     const ArrayVALUES = []
     ArrayVALUES.push(Object.values(result))
@@ -356,12 +355,12 @@ function getChart(result) {
     }
     async function getvalueevery2sec() {
         const Currentvalue = await getcurrentconvert(arreytoggle)
-        objvaluesarrey.push(Object.values(Currentvalue))
-        chart.data[0].dataPoints.push({ x: new Date(), y: objvaluesarrey[0][0]?.USD || "not found" })
-        chart.data[1].dataPoints.push({ x: new Date(), y: objvaluesarrey[0][1]?.USD || "not found" })
-        chart.data[2].dataPoints.push({ x: new Date(), y: objvaluesarrey[0][2]?.USD || "not found" })
-        chart.data[3].dataPoints.push({ x: new Date(), y: objvaluesarrey[0][3]?.USD || "not found" })
-        chart.data[4].dataPoints.push({ x: new Date(), y: objvaluesarrey[0][4]?.USD || "not found" })
+        objvaluesarrey = Object.values(Currentvalue)
+        chart.data[0].dataPoints.push({ x: new Date(), y: objvaluesarrey[0]?.USD || "not found" })
+        chart.data[1].dataPoints.push({ x: new Date(), y: objvaluesarrey[1]?.USD || "not found" })
+        chart.data[2].dataPoints.push({ x: new Date(), y: objvaluesarrey[2]?.USD || "not found" })
+        chart.data[3].dataPoints.push({ x: new Date(), y: objvaluesarrey[3]?.USD || "not found" })
+        chart.data[4].dataPoints.push({ x: new Date(), y: objvaluesarrey[4]?.USD || "not found" })
         chart.render()
     }
 
